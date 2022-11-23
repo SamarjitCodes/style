@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: -4%;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: rgb(109, 109, 109);
+  background: rgb(255, 255, 255);
+}
+nav .menu-btn i{
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+
+  .aaa{
+    padding-top: 1%;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.branding{
+    
+    font-family: 'Kalam', cursive;
+    font-size: 250%;
+    padding-top: 3%;
+}
+
+.fashion{
+    background-color: rgb(238, 237, 237);
+}
+
+.shopnow{
+    margin-bottom: 3%;
+    background-color: white;
+    border: 2px solid rgb(179, 179, 179);
+    padding-top: .7%;
+    padding-bottom: .7%;
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+    border-radius: 4px;
+    margin-top: 1%;
+}
+
+.prodtext{
+    align-items: center;
+    padding-top: 2.5%;
+    font-weight: 900;
+    font-family: 'Satisfy', cursive;
+}
+.img1{
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 3%;
+    padding-bottom: 11%;
+}
+
+.firstimg{
+    padding-left: 7%;
+}
+
+
+.footer-text{
+    padding-bottom: 0.5%;
+    align-items: center;
+}
+
+
